@@ -1,0 +1,28 @@
+.header {
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 36px 0;
+    }
+    
+    .logo {
+        font-size: 34px;
+        font-weight: 800;
+        color: #1E69B8;
+    }
+
+    .nav {
+        ul {
+            display: flex;
+            flex-direction: row;
+
+            li {
+                font-size: 16px;
+                padding-left: 26px;
+                font-weight: 400;
+            }
+        }
+    }
+}

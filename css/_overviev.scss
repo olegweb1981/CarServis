@@ -1,0 +1,31 @@
+.overviev {
+
+    .nav-overviev {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 44px;
+    }
+
+    .overviev-item {
+        width: 31.5%;
+        position: relative;
+
+        .caption {
+            font-size: 17px;
+            padding: 31px 0 14px 0;
+        }
+
+        img {
+            position: absolute;
+            top: 82px;
+            left: 0;
+        }
+
+        p {
+            padding: 0 0 21px 78px;
+        }
+    }
+
+}

@@ -1,0 +1,65 @@
+.box {
+    border-bottom: 1px solid #E2E6E7;
+    padding-bottom: 5px;
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .content {
+        width: 50%;
+        padding: 60px 0;
+
+        .text {
+            text-align: left;
+            padding: 34px 0 14px 0;
+        }
+    }
+
+    .box-acordeon {
+        width: 50%;
+        padding: 60px 0 60px 15px;
+    }
+
+    .acordeon {
+        border: 1px solid #E2E6E7;
+        margin-top: 39px;
+
+        .text {
+            text-align: left;
+        }
+
+        img {
+            vertical-align: middle;
+            margin-right: 20px;
+        }
+
+        p {
+            padding: 47px 0 1px 0;
+        }
+    }
+
+    .acord-ittem {
+        border-bottom: 1px solid #E2E6E7;
+        padding: 17px 20px;
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    p {
+        padding: 0px 10px 59px 0;
+        line-height: 26px;
+    }
+
+    .line {
+        width: 40px;
+        padding: 8px 0 8px 0;
+    }
+
+    .btn {
+        padding: 20px 24px 20px 23px;
+    }
+}

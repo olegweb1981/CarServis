@@ -1,0 +1,64 @@
+.appointment {
+    background-color: #F5F5F5;
+    padding: 50px 0;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h3 {
+        color: black;
+    }
+
+    .request {
+        padding: 0 39px 0 0;
+    }
+}
+
+.serviced {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        padding: 73px 0 28px 0;
+    }
+
+    .text {
+        padding: 34px 0;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 0 27px 0;
+    }
+
+    .service-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 31.6%;
+
+        .line {
+            width: 40px;
+        }
+    }
+
+    .caption {
+        padding: 34px 0 20px 0;
+    }
+
+    p {
+        padding: 21px 10px;
+    }
+}

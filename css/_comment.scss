@@ -1,0 +1,39 @@
+.comment {
+    padding: 0;
+    color: white;
+    background-image: url(/img/bg-body.jpg);
+    background-position: center center;
+    background-size: cover;
+
+    .quote {
+        font-style: italic;
+        font-size: 21px;
+        line-height: 36px;
+        padding: 68px 0px 55px 0px;
+        letter-spacing: -0.21px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+
+        img {
+            margin-bottom: 39px;
+            
+        }
+    }
+
+    .line {
+        border-bottom: 1.5px solid white;
+        width: 42px;
+        padding: 22px 0;
+    }
+
+    .autor {
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        padding: 6px 0;
+        font-style: normal;
+    }
+}

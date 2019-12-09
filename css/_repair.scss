@@ -1,0 +1,27 @@
+.repair {
+    padding-bottom: 67px;
+    
+    .title {
+        padding: 8px 0 28px 0;
+    }
+
+    .pictures{
+        display: flex;
+        flex-direction: row;
+        padding: 16px 0 60px 0;
+
+        img:hover {
+            opacity: 0.85;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+    }
+
+    .caption {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 9px 20px 9px 20px;
+    }
+}

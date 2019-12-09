@@ -1,0 +1,22 @@
+.btn {
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 14px 24px 14px 24px;
+    border: 1px solid;
+    border-color: white;
+    background-color: #1E69B8;
+    color: white;
+}
+
+.btn-light {
+    background-color: transparent;
+    border: 1px solid rgb(233, 221, 221);
+    color: #1E69B8;
+
+    &:hover {
+        background-color: #1E69B8;
+        color: white;
+        transition: 0.5s ease;
+    }
+}
