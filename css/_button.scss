@@ -7,6 +7,24 @@
     border-color: white;
     background-color: #1E69B8;
     color: white;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.1);
+        transition: 0.2s ease 0s;
+        z-index: 9;
+    }
+
+    &:hover::before {
+        width: 100%;
+        background: rgba(0,0,0,0.12);
+    }
 }
 
 .btn-light {

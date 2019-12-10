@@ -3,7 +3,11 @@
     flex-direction: row;
     width: 100%;
 
-    img {
+    .img-item {
         width: 25%;
+    }
+
+    img {
+        width: 100%;
     }
 }

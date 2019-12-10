@@ -19,6 +19,11 @@
         border: 1px solid white;
         border-radius: 100%;
 
+        &:hover {
+            background-color: #1E69B8;
+            transition: 0.5s;
+        }
+
         &::before {
             content: '';
         }
