@@ -1,40 +1,5 @@
-.bx-wrapper {
-    .bx-prev, .bx-next {
-        background-image: url(/img/chevron.gif);
-        padding: 37px 20px;
-        background-repeat: no-repeat;
-        display: none;
-        position: absolute;
-        top: 250px;
-        background-color: black;
-        background-size: 14px;
-        color: white;
-        background-position: center center;
-        cursor: pointer;
-        text-indent: -9999px;
-    }
 
-    .bx-prev {
-        left: 0;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
-    }
-    .bx-next {
-        transform: scaleX(-1);
-        right: 0;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-    }
 
-    &:hover .bx-prev, &:hover .bx-next {
-        opacity: 0.15;
-        display: block;
-    }
-}
-
-.bx-viewport {
-    min-height: 600px;
-}
 .banner-1,
 .banner-2,
 .banner-3 {
@@ -60,7 +25,21 @@
     }
 
     .sm-car {
-        padding: 96px 0 37px 0;
+        img {
+            padding: 96px 0 37px 0;
+            animation: move 1s ease 0s;
+            position: relative;
+
+            @keyframes move {
+                0% {
+                    top: -70px;
+                }
+                100% {
+                    top: 0;
+                }
+            }
+            
+        }
     }
 
     h1 {
@@ -68,6 +47,19 @@
         color: white;
         font-weight: 800;
         letter-spacing: 1px;
+        animation: move-h1 0.5s ease 0.3s;
+        position: relative;
+
+        @keyframes move-h1 {
+            0% {
+                top: 70px;
+                opacity: 0;
+            }
+            100% {
+                top: 0;
+                opacity: 1;
+            }
+        }
 
         &:hover {
             color: rgba(255,255,255, 0.5);
@@ -79,6 +71,35 @@
         color: white;
         font-size: 21px;
         padding: 47px 0 49px 0;
+        animation: move-subtitle 0.5s ease 0.5s;
+        position: relative;
+
+        @keyframes move-subtitle {
+            0% {
+                top: 70px;
+                opacity: 0;
+            }
+            100% {
+                top: 0;
+                opacity: 1;
+            }
+        }
+    }
+
+    .btn {
+        animation: move-btn 0.5s ease 0.7s;
+        position: relative;
+
+        @keyframes move-btn {
+            0% {
+                top: 70px;
+                opacity: 0;
+            }
+            100% {
+                top: 0;
+                opacity: 1;
+            }
+        }
     }
 }
 

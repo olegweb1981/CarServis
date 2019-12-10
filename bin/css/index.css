@@ -178,43 +178,6 @@ h5 {
   font-weight: 400;
 }
 
-.bx-wrapper .bx-prev, .bx-wrapper .bx-next {
-  background-image: url(/img/chevron.gif);
-  padding: 37px 20px;
-  background-repeat: no-repeat;
-  display: none;
-  position: absolute;
-  top: 250px;
-  background-color: black;
-  background-size: 14px;
-  color: white;
-  background-position: center center;
-  cursor: pointer;
-  text-indent: -9999px;
-}
-
-.bx-wrapper .bx-prev {
-  left: 0;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.bx-wrapper .bx-next {
-  transform: scaleX(-1);
-  right: 0;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
-.bx-wrapper:hover .bx-prev, .bx-wrapper:hover .bx-next {
-  opacity: 0.15;
-  display: block;
-}
-
-.bx-viewport {
-  min-height: 600px;
-}
-
 .banner-1,
 .banner-2,
 .banner-3 {
@@ -246,10 +209,21 @@ h5 {
   align-items: center;
 }
 
-.banner-1 .sm-car,
-.banner-2 .sm-car,
-.banner-3 .sm-car {
+.banner-1 .sm-car img,
+.banner-2 .sm-car img,
+.banner-3 .sm-car img {
   padding: 96px 0 37px 0;
+  animation: move 1s ease 0s;
+  position: relative;
+}
+
+@keyframes move {
+  0% {
+    top: -70px;
+  }
+  100% {
+    top: 0;
+  }
 }
 
 .banner-1 h1,
@@ -259,6 +233,19 @@ h5 {
   color: white;
   font-weight: 800;
   letter-spacing: 1px;
+  animation: move-h1 0.5s ease 0.3s;
+  position: relative;
+}
+
+@keyframes move-h1 {
+  0% {
+    top: 70px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 .banner-1 h1:hover,
@@ -274,6 +261,37 @@ h5 {
   color: white;
   font-size: 21px;
   padding: 47px 0 49px 0;
+  animation: move-subtitle 0.5s ease 0.5s;
+  position: relative;
+}
+
+@keyframes move-subtitle {
+  0% {
+    top: 70px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.banner-1 .btn,
+.banner-2 .btn,
+.banner-3 .btn {
+  animation: move-btn 0.5s ease 0.7s;
+  position: relative;
+}
+
+@keyframes move-btn {
+  0% {
+    top: 70px;
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
 }
 
 .banner-1 {
@@ -288,28 +306,85 @@ h5 {
   background-image: url(/img/slider/image_03.jpg);
 }
 
-.bullets {
-  display: flex;
-  flex-direction: row;
-  padding-top: 87px;
-  cursor: pointer;
+.bx-wrapper {
+  border: 0;
+  margin-bottom: 0;
 }
 
-.bullets .bullet {
+.bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 250px;
+  margin-top: 0;
+  outline: 0;
+  width: 0;
+  height: 0;
+}
+
+.bx-wrapper .bx-prev, .bx-wrapper .bx-next {
+  background-image: url(/img/chevron.gif);
+  padding: 50px 20px;
+  background-repeat: no-repeat;
+  display: none;
+  position: absolute;
+  background-color: black;
+  background-size: 14px;
+  background-position: center center;
+  cursor: pointer;
+  text-indent: -9999px;
+  border-radius: 0;
+}
+
+.bx-wrapper .bx-prev {
+  left: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.bx-wrapper .bx-next {
+  transform: scaleX(-1);
+  right: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.bx-wrapper:hover .bx-prev, .bx-wrapper:hover .bx-next {
+  background-color: black;
+  opacity: 0.15;
+  display: block;
+}
+
+.bx-wrapper:hover .bx-prev:hover, .bx-wrapper:hover .bx-next:hover {
+  background-color: white;
+  background-image: url(/img/chevron-black.gif);
+  background-position: center center;
+  opacity: 1;
+}
+
+.bx-wrapper .bx-pager {
+  padding-top: 0;
+  bottom: 20px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+  background-color: rgba(0, 0, 0, 0.25);
+  text-indent: -9999px;
+  display: block;
   width: 12px;
   height: 12px;
   margin: 0 5px;
+  outline: 0;
   border-radius: 100%;
-  background-color: rgba(0, 0, 0, 0.25);
 }
 
-.bullets .bullet:nth-child(2) {
-  background-color: white;
-}
-
-.bullets .bullet:hover {
-  background-color: white;
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus,
+.bx-wrapper .bx-pager.bx-default-pager a:hover {
+  background: white;
   transition: 0.5s ease;
+}
+
+.bx-wrapper .bx-viewport {
+  min-height: 600px;
 }
 
 .btn {
@@ -477,7 +552,41 @@ h5 {
   background-size: cover;
 }
 
+.comment .container {
+  display: block;
+  position: relative;
+}
+
+.comment .slick-prev, .comment .slick-next {
+  background-image: url(/img/btn-slick.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 60px;
+  height: 60px;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+
+.comment .slick-prev::before, .comment .slick-next::before {
+  content: '';
+}
+
+.comment .slick-prev {
+  left: 0;
+  top: 236px;
+}
+
+.comment .slick-next {
+  transform: scaleX(-1);
+  right: 0;
+  top: 206px;
+}
+
 .comment .quote {
+  padding: 0 62px;
+}
+
+.comment .quote-item {
   font-style: italic;
   font-size: 21px;
   line-height: 36px;
@@ -490,7 +599,7 @@ h5 {
   text-align: center;
 }
 
-.comment .quote img {
+.comment .quote-item img {
   margin-bottom: 39px;
 }
 

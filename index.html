@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,400i,500,600,700,800,900" rel="stylesheet">
 
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="bin/css/bxslider.css">
+    <link rel="stylesheet" href="bxslider/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
     
     <link rel="stylesheet" href="bin/css/index.css">
 </head>
@@ -55,54 +57,48 @@
             </div>
         </div>
         <div class="banner">
-            <div class="bx-viewport">
-                <div class="bxslider">
-                    <div class="banner-1">
-                        <div class="container">
-                            <div class="bx-ittem">
-                                <div class="sm-car">
-                                    <img src="img/sm-car-1.gif" alt="">
-                                </div>
-                                <h1><a href="#">MAKE YOUR CAR LAST LONGER</a></h1>
-                                <div class="subtitle">
-                                    Free oil change, April 15. Only if you have a "5" on your license plate.
-                                </div>
-                                <a href="#" class="btn btn-light">PURCHASE TEMPLATE</a>
+            <div class="bxslider">
+                <div class="banner-1">
+                    <div class="container">
+                        <div class="bx-ittem">
+                            <div class="sm-car">
+                                <img src="img/sm-car-1.gif" alt="">
                             </div>
-                        </div>
-                    </div>
-                    <div class="banner-2">
-                        <div class="container">
-                            <div class="bx-ittem">
-                                <div class="sm-car">
-                                    <img src="img/sm-car-2.gif" alt="">
-                                </div>
-                                <h1><a href="#">FIND THE TIRES THAT MATCH YOUR NEEDS</a></h1>
-                                <div class="subtitle">
-                                    Take advantage of our lowest prices which automatically include coupons.
-                                </div>
-                                <a href="#" class="btn btn-light">PURCHASE TEMPLATE</a>
+                            <h1><a href="#">MAKE YOUR CAR LAST LONGER</a></h1>
+                            <div class="subtitle">
+                                Free oil change, April 15. Only if you have a "5" on your license plate.
                             </div>
-                        </div>
-                    </div>
-                    <div class="banner-3">
-                        <div class="container">
-                            <div class="bx-ittem">
-                                <div class="sm-car">
-                                    <img src="img/sm-car-3.gif" alt="">
-                                </div>
-                                <h1><a href="#">EXPERT TECHNICIANS, COMPETITIVE PRICES</a></h1>
-                                <div class="subtitle">
-                                    We are committed to earning your trust by providing the expertise and value you expect.
-                                </div>
-                                <a href="#" class="btn btn-light">PURCHASE TEMPLATE</a>
-                            </div>
+                            <a href="#" class="btn btn-light">PURCHASE TEMPLATE</a>
                         </div>
                     </div>
                 </div>
-                <div class="bx-controls">
-                    <div class="bx-prev"></div>
-                    <div class="bx-next"></div>
+                <div class="banner-2">
+                    <div class="container">
+                        <div class="bx-ittem">
+                            <div class="sm-car">
+                                <img src="img/sm-car-2.gif" alt="">
+                            </div>
+                            <h1><a href="#">FIND THE TIRES THAT MATCH YOUR NEEDS</a></h1>
+                            <div class="subtitle">
+                                Take advantage of our lowest prices which automatically include coupons.
+                            </div>
+                            <a href="#" class="btn btn-light">PURCHASE TEMPLATE</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-3">
+                    <div class="container">
+                        <div class="bx-ittem">
+                            <div class="sm-car">
+                                <img src="img/sm-car-3.gif" alt="">
+                            </div>
+                            <h1><a href="#">EXPERT TECHNICIANS, COMPETITIVE PRICES</a></h1>
+                            <div class="subtitle">
+                                We are committed to earning your trust by providing the expertise and value you expect.
+                            </div>
+                            <a href="#" class="btn btn-light">PURCHASE TEMPLATE</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -246,14 +242,36 @@
             <div class="comment">
                 <div class="container">
                     <div class="quote">
-                        <img src="img/icon-1.gif" alt="alt">
-                            "I have taken several of the family cars here for the past several years and without
-                        </br>
-                             exception the experiences have been outstanding. I would highly recommend this place 
-                        </br>
-                             to any one who wants great service, honest value, and really great people."
-                        <div class="line"></div>
-                        <div class="autor">ROBERT SMITH</div>
+                        <div class="quote-item">
+                            <img src="img/icon-1.gif" alt="alt">
+                                "I have taken several of the family cars here for the past several years and without
+                            </br>
+                                exception the experiences have been outstanding. I would highly recommend this place 
+                            </br>
+                                to any one who wants great service, honest value, and really great people."
+                            <div class="line"></div>
+                            <div class="autor">ROBERT SMITH</div>
+                        </div>
+                        <div class="quote-item">
+                            <img src="img/icon-1.gif" alt="alt">
+                                "I have taken several of the family cars here for the past several years and without
+                            </br>
+                                exception the experiences have been outstanding. I would highly recommend this place 
+                            </br>
+                                to any one who wants great service, honest value, and really great people."
+                            <div class="line"></div>
+                            <div class="autor">ROBERT SMITH</div>
+                        </div>
+                        <div class="quote-item">
+                            <img src="img/icon-1.gif" alt="alt">
+                                "I have taken several of the family cars here for the past several years and without
+                            </br>
+                                exception the experiences have been outstanding. I would highly recommend this place 
+                            </br>
+                                to any one who wants great service, honest value, and really great people."
+                            <div class="line"></div>
+                            <div class="autor">ROBERT SMITH</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -535,7 +553,9 @@
 
     <script type="text/javascript" src="js/jquery.pixlayout.0.9.7.js"></script>
 
-    <script src="js/bxslider.js"></script>
+    <script src="bxslider/jquery.bxslider.min.js"></script>
+
+    <script src="slick/slick.min.js"></script>
 
     <script type="text/javascript" src="js/index.js"></script>
 

@@ -1,3 +1,9 @@
+//BxSlider
 $(document).ready(function(){
-    $('.bxslider').bxSlider();
+    $('.bxslider').bxSlider({
+        mode: "fade",
+    });
 });
+
+//Sclick
+$('.quote').slick();

@@ -5,7 +5,41 @@
     background-position: center center;
     background-size: cover;
 
+    .container {
+        display: block;
+        position: relative;
+    }
+
+    .slick-prev, .slick-next {
+        background-image: url(/img/btn-slick.gif);
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 60px;
+        height: 60px;
+        border: 1px solid white;
+        border-radius: 100%;
+
+        &::before {
+            content: '';
+        }
+    }
+
+    .slick-prev {
+        left: 0;
+        top: 236px;
+    }
+
+    .slick-next {
+        transform: scaleX(-1);
+        right: 0;
+        top: 206px;
+    }
+
     .quote {
+        padding: 0 62px;
+    }
+
+    .quote-item {
         font-style: italic;
         font-size: 21px;
         line-height: 36px;
