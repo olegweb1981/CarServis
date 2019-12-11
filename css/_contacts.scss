@@ -5,6 +5,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        position: relative;
     }
 
     ul {
@@ -54,4 +55,49 @@
             }
         }
     }
+
+    .hidden-search {
+        display: none;
+        position: absolute;
+        top: 59px;
+        right: 0;
+        width: 199px;
+
+        .form {
+            padding: 8px;
+            background-color: #F5F5F5;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        input {
+            padding: 15px 10px;
+            width: 125px;
+            border: 1px solid #E2E6E7;
+            outline: none;
+        }
+
+        i {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            padding: 18px 18px 18px 18px;
+            border: 1px solid #E2E6E7;
+            font-weight: 600;
+            color: rgb(203, 208, 209);
+            cursor: pointer;
+
+            &:hover {
+                color: #777777;
+                transition: 0.5s ease;
+            }
+        }
+    }
+}
+
+body.search-visible .hidden-search {
+    display: block;
 }

@@ -33,7 +33,13 @@
                         <i class="fab fa-facebook-f"></i>
                         <i class="fab fa-twitter"></i>
                         <i class="fab fa-pinterest"></i>
-                        <i id="search" class="fas fa-search"></i>
+                        <i id="search" class="fas fa-search" onclick="toggleMenu()"></i>
+                    </div>
+                    <div class="hidden-search">
+                        <div class="form">
+                            <input type="search" placeholder="Search">
+                            <i class="fas fa-search"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -44,14 +50,60 @@
                     <div class="logo"><a href="#">CARSERVICE</a></div>
                     <div class="nav">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Our Team</a></li>
-                            <li><a href="#">Pages</a></li>
+                            <li class="active"><a href="#">Home</a>
+                                <ul class="dropotron">
+                                    <li><a href="#">Home Style 1</a></li>
+                                    <li><a href="#">Home Style 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Services</a>
+                                <ul class="dropotron">
+                                    <li><a href="#">Home Style 1</a></li>
+                                    <li><a href="#">Home Style 2</a></li>
+                                    <li><a href="#">Home Style 2</a></li>
+                                    <li><a href="#">Home Style 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Gallery</a>
+                                <ul class="dropotron">
+                                    <li><a href="#">Home Style 1</a></li>
+                                    <li><a href="#">Home Style 2</a></li>
+                                    <li><a href="#">Home Style 2</a></li>
+                                    <li><a href="#">Home Style 2</a></li>
+                                    <li><a href="#">Home Style 2</a></li>
+                                    <li><a href="#">Home Style 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Our Team</a>
+                                <ul class="dropotron">
+                                    <li><a href="#">Home Style 1</a></li>
+                                    <li><a href="#">Home Style 2</a></li>
+                                    <li><a href="#">Home Style 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Pages</a>
+                                <ul class="dropotron">
+                                    <li><a href="#">Home Style 1</a></li>
+                                    <li><a href="#">Home Style 2</a></li>
+                                    <li><a href="#">Home Style 2</a></li>
+                                </ul>
+                            </li>
                             <li><a href="#">Blog</a></li>
-                            <li><a href="#">Appointment</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Appointment</a>
+                                <ul class="dropotron">
+                                    <li><a href="#">Home Style 1</a></li>
+                                    <li><a href="#">Home Style 2</a></li>
+                                    <li><a href="#">Home Style 2</a></li>
+                                    <li><a href="#">Home Style 2</a></li>
+                                    <li><a href="#">Home Style 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Contact</a>
+                                <ul class="dropotron">
+                                    <li><a href="#">Home Style 1</a></li>
+                                    <li><a href="#">Home Style 2</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div> 
@@ -616,6 +668,8 @@
     <script src="slick/slick.min.js"></script>
 
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="js/jquery.dropotron.min.js"></script>
 
     <script type="text/javascript" src="js/index.js"></script>
 

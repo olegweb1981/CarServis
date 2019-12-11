@@ -21,3 +21,12 @@ $(document).ready(function(){
         arrows: true,
     });
 });
+
+//Dropotron
+$('.nav > ul').dropotron();
+
+
+//Hidden Search
+function toggleMenu() {
+    $(document.body).toggleClass('search-visible');
+  }

@@ -22,7 +22,40 @@
                 font-size: 16px;
                 padding-left: 26px;
                 font-weight: 400;
+
+                &:hover {
+                    color: #1E69B8;
+                }
             }
+        }
+
+        .active {
+            color: #1E69B8;
+        }
+    }
+
+}
+
+.dropotron {
+    flex-direction: column;
+    border: 1px solid #E2E6E7;
+    width: 210px;
+    background-color: white;
+    margin-left: 15px;
+
+    li {
+        padding: 10px 15px;
+        border-bottom: 1px solid #E2E6E7;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+
+        &:last-child {
+            border-bottom: 0;
+        }
+
+        &:hover {
+            color: #1E69B8;
         }
     }
 }

@@ -6,6 +6,7 @@
     .img-item {
         width: 25%;
         position: relative;
+        cursor: pointer;
 
         &:hover .view {
             display: block;

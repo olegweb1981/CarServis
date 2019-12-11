@@ -104,6 +104,7 @@ h5 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
 }
 
 .contacts ul {
@@ -154,6 +155,51 @@ h5 {
   border-right: 1px solid #E2E6E7;
 }
 
+.contacts .hidden-search {
+  display: none;
+  position: absolute;
+  top: 59px;
+  right: 0;
+  width: 199px;
+}
+
+.contacts .hidden-search .form {
+  padding: 8px;
+  background-color: #F5F5F5;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contacts .hidden-search input {
+  padding: 15px 10px;
+  width: 125px;
+  border: 1px solid #E2E6E7;
+  outline: none;
+}
+
+.contacts .hidden-search i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  padding: 18px 18px 18px 18px;
+  border: 1px solid #E2E6E7;
+  font-weight: 600;
+  color: #cbd0d1;
+  cursor: pointer;
+}
+
+.contacts .hidden-search i:hover {
+  color: #777777;
+  transition: 0.5s ease;
+}
+
+body.search-visible .hidden-search {
+  display: block;
+}
+
 .header .menu {
   display: flex;
   flex-direction: row;
@@ -176,6 +222,38 @@ h5 {
   font-size: 16px;
   padding-left: 26px;
   font-weight: 400;
+}
+
+.header .nav ul li:hover {
+  color: #1E69B8;
+}
+
+.header .nav .active {
+  color: #1E69B8;
+}
+
+.dropotron {
+  flex-direction: column;
+  border: 1px solid #E2E6E7;
+  width: 210px;
+  background-color: white;
+  margin-left: 15px;
+}
+
+.dropotron li {
+  padding: 10px 15px;
+  border-bottom: 1px solid #E2E6E7;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.dropotron li:last-child {
+  border-bottom: 0;
+}
+
+.dropotron li:hover {
+  color: #1E69B8;
 }
 
 .banner-1,
@@ -677,6 +755,7 @@ h5 {
 .gallery .img-item {
   width: 25%;
   position: relative;
+  cursor: pointer;
 }
 
 .gallery .img-item:hover .view {
