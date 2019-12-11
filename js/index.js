@@ -5,12 +5,13 @@ $(document).ready(function(){
     });
 });
 
-//Sclick
+//Slick
 $('.quote').slick();
 
 //Accordeon
 $(".accordion" ).accordion();
 
+//LogosSlick
 $(document).ready(function(){
     $('.multiple-items').slick({
         infinite: true,
