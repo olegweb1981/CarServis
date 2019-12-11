@@ -655,7 +655,7 @@ h5 {
 
 .overviev .overviev-item .caption {
   font-size: 17px;
-  padding: 31px 0 14px 0;
+  padding: 31px 0 15px 0;
 }
 
 .overviev .overviev-item img {
@@ -684,7 +684,7 @@ h5 {
 
 .box {
   border-bottom: 1px solid #E2E6E7;
-  padding-bottom: 5px;
+  padding-bottom: 46px;
 }
 
 .box .container {
@@ -694,7 +694,7 @@ h5 {
 
 .box .content {
   width: 50%;
-  padding: 60px 0;
+  padding: 51px 0;
 }
 
 .box .content .text {
@@ -704,34 +704,61 @@ h5 {
 
 .box .box-acordeon {
   width: 50%;
-  padding: 60px 0 60px 15px;
+  padding: 51px 0 60px 15px;
 }
 
-.box .acordeon {
+.box .accordion {
   border: 1px solid #E2E6E7;
   margin-top: 39px;
-}
-
-.box .acordeon .text {
   text-align: left;
 }
 
-.box .acordeon img {
-  vertical-align: middle;
-  margin-right: 20px;
+.box .accordion .text, .box .accordion .ui-widget {
+  text-align: left;
+  font-size: 18px;
+  font-family: 'Open Sans';
+  line-height: 28px;
+  font-weight: 300;
 }
 
-.box .acordeon p {
-  padding: 47px 0 1px 0;
-}
-
-.box .acord-ittem {
+.box .accordion .ui-accordion-header {
+  margin: 0;
+  outline: none;
+  padding: 18px 20px;
+  border: none;
   border-bottom: 1px solid #E2E6E7;
-  padding: 17px 20px;
 }
 
-.box .acord-ittem:last-child {
-  border-bottom: 0;
+.box .accordion .ui-accordion-header .ui-icon {
+  background-image: url(/img/acord-right.gif);
+  background-position: 0 4px;
+  width: 30px;
+  height: 30px;
+  margin-right: 14px;
+}
+
+.box .accordion .ui-state-active .ui-icon {
+  background-image: url(/img/acord-bottom.gif);
+}
+
+.box .accordion p {
+  font-size: 14px;
+  font-family: 'Open Sans';
+  font-weight: 400;
+  line-height: 26px;
+  color: #777;
+  padding: 0;
+}
+
+.box .accordion .ui-accordion-content {
+  padding: 0 2px 25px 19px;
+  border: none;
+  border-bottom: 1px solid #E2E6E7;
+}
+
+.box .accordion .ui-state-default {
+  background: none;
+  color: #777;
 }
 
 .box p {
@@ -753,6 +780,32 @@ h5 {
   flex-direction: row;
   justify-content: space-between;
   padding: 49px 0;
+  margin-bottom: 62px;
+}
+
+.logos .nav-logos img {
+  width: 170px;
+}
+
+.logos .nav-logos .slick-slide {
+  outline: none;
+}
+
+.logos .nav-logos .slick-dots li button::before {
+  content: '';
+  border: 2px solid #1E69B8;
+  width: 11px;
+  height: 11px;
+  border-radius: 100%;
+}
+
+.logos .nav-logos .slick-dots li {
+  width: 11px;
+  height: 11px;
+}
+
+.logos .nav-logos .slick-dots {
+  bottom: -17px;
 }
 
 .logos .bullets {
