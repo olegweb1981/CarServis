@@ -1,0 +1,14 @@
+@media screen and (max-width: $md-width) {
+    .copyring {
+        text-align: center;
+        padding: 30px 0;
+
+        p {
+            font-size: 14px;
+        }
+
+        a {
+            font-weight: 500;
+        }
+    }
+}

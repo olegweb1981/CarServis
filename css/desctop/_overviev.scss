@@ -1,0 +1,31 @@
+@media screen and (max-width: $xl-width) {
+    .overviev {
+
+        .title {
+            padding: 58px 0 28px 0;
+        }
+
+        .nav-overviev {
+            padding-bottom: 47px;
+        }
+
+        .overviev-item {
+            width: 30.7%;
+            position: relative;
+
+            .caption {
+                font-size: 17px;
+                padding: 31px 0 15px 0;
+            }
+
+            img {
+                top: 82px;
+                left: 0;
+            }
+
+            p {
+                padding: 0 0 3px 78px;
+            }
+        }
+    }
+}

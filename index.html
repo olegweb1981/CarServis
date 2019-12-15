@@ -33,13 +33,16 @@
                         <i class="fab fa-facebook-f"></i>
                         <i class="fab fa-twitter"></i>
                         <i class="fab fa-pinterest"></i>
-                        <i id="search" class="fas fa-search" onclick="toggleMenu()"></i>
+                        <i class="fas fa-search" onclick="toggleNav()"></i>
                     </div>
                     <div class="hidden-search">
                         <div class="form">
                             <input type="search" placeholder="Search">
                             <i class="fas fa-search"></i>
                         </div>
+                    </div>
+                    <div class="top-bar">
+                        <img class="active" src="img/arrow-top-bar.gif" alt="alt" onclick="toggleTopBar(), arrowTopBar()">
                     </div>
                 </div>
             </div>
@@ -48,6 +51,9 @@
             <div class="container">
                 <div class="menu">
                     <div class="logo"><a href="#">CARSERVICE</a></div>
+                    <div class="navbar">
+                        <i class="fas fa-bars"></i>
+                    </div>
                     <div class="nav">
                         <ul>
                             <li class="active"><a href="#">Home</a>
@@ -164,52 +170,54 @@
             </div>
         </div>
         <div class="serviced">
-            <div class="container">
-                <div class="title">
-                    WHY CHOOSE US?
-                </div>
-                <div class="line"></div>
-                <div class="text">
-                    We are one of the leading auto repair shops serving customers in Tucson.
-                </br>
-                    All mechanic services are performed by highly qualified mechanics.
-                </div>
-                <div class="info">
-                    <div class="service-item">
-                        <img src="img/service-1.gif" alt="">
-                        <div class="caption">
-                            EVERY JOB IS PERSONAL
-                        </div>
-                        <div class="line"></div>
-                        <p>
-                            If you want the quality you would expect from the dealership, 
-                            but with a more personal and friendly atmosphere, you have found it.
-                        </p>
+            <div class="choose">
+                <div class="container">
+                    <div class="title">
+                        WHY CHOOSE US?
                     </div>
-                    <div class="service-item">
-                        <img src="img/service-2.gif" alt="">
-                        <div class="caption">
-                            BEST MATERIALS
-                        </div>
-                        <div class="line"></div>
-                        <p>
-                            We have invested in all the latest specialist tools and diagnostic 
-                            software that is specifically tailored for the software in your vehicle.
-                        </p>
+                    <div class="line"></div>
+                    <div class="text">
+                        We are one of the leading auto repair shops serving customers in Tucson.
+                    </br>
+                        All mechanic services are performed by highly qualified mechanics.
                     </div>
-                    <div class="service-item">
-                        <img src="img/service-3.gif" alt="">
-                        <div class="caption">
-                            PROFESSIONAL STANDARDS
+                    <div class="info">
+                        <div class="service-item">
+                            <img src="img/service-1.gif" alt="">
+                            <div class="caption">
+                                EVERY JOB IS PERSONAL
+                            </div>
+                            <div class="line"></div>
+                            <p>
+                                If you want the quality you would expect from the dealership, 
+                                but with a more personal and friendly atmosphere, you have found it.
+                            </p>
                         </div>
-                        <div class="line"></div>
-                        <p>
-                            Our auto repair shop is capable of servicing a variety of 
-                            models. We only do the work that is needed to fix your problem.
-                        </p>
+                        <div class="service-item">
+                            <img src="img/service-2.gif" alt="">
+                            <div class="caption">
+                                BEST MATERIALS
+                            </div>
+                            <div class="line"></div>
+                            <p>
+                                We have invested in all the latest specialist tools and diagnostic 
+                                software that is specifically tailored for the software in your vehicle.
+                            </p>
+                        </div>
+                        <div class="service-item">
+                            <img src="img/service-3.gif" alt="">
+                            <div class="caption">
+                                PROFESSIONAL STANDARDS
+                            </div>
+                            <div class="line"></div>
+                            <p>
+                                Our auto repair shop is capable of servicing a variety of 
+                                models. We only do the work that is needed to fix your problem.
+                            </p>
+                        </div>
                     </div>
+                    <a href="#" class="btn">READ MORE</a>
                 </div>
-                <a href="#" class="btn">READ MORE</a>
             </div>
             <div class="model-car">
                 <div class="repair-img"></div>

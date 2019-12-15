@@ -1,0 +1,59 @@
+@media screen and (max-width: $xl-width) {
+    .box {
+        padding-bottom: 46px;
+
+        .content {
+            padding: 20px 0;
+
+            .text {
+                padding: 34px 2px 14px 0;
+            }
+        }
+
+        .box-acordeon {
+            padding: 20px 0 60px 15px;
+        }
+
+        .accordion {
+            margin-top: 39px;
+
+            .text, .ui-widget{
+                font-size: 14px;
+            }
+
+            .ui-accordion-header {
+                padding: 18px 20px;
+
+                .ui-icon {
+                    background-position: 0 4px;
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 14px;
+                }
+            }
+
+            p {
+                font-size: 12px;
+                line-height: 26px;
+            }
+
+            .ui-accordion-content {
+                padding: 0 2px 25px 19px;
+            }
+        }
+
+        p {
+            padding: 0px 10px 44px 0;
+            line-height: 26px;
+        }
+
+        .line {
+            width: 40px;
+            padding: 8px 0 8px 0;
+        }
+
+        .btn {
+            padding: 20px 20px 20px 19px;
+        }
+    }
+}

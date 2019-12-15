@@ -8,6 +8,7 @@
     background-color: #1E69B8;
     color: white;
     position: relative;
+    white-space: nowrap;
 
     &::before {
         position: absolute;

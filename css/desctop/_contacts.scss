@@ -1,0 +1,44 @@
+@media screen and (max-width: $xl-width) {
+    .contacts {
+        background-color: #F5F5F5;
+    
+        ul {
+    
+            li {
+                padding: 11px 12px 10px 13px;
+    
+                &:last-child {
+                    border-right: 0;
+                }
+            }
+        }
+    
+        .social {
+    
+            i {
+                font-size: 12px;
+                padding: 20px 19px 19px 18px;
+            }
+        }
+    
+        .hidden-search {
+            top: 59px;
+            right: 0;
+            width: 199px;
+    
+            .form {
+                padding: 8px;
+            }
+    
+            input {
+                padding: 15px 10px;
+                width: 125px;
+            }
+    
+            i {
+                font-size: 12px;
+                padding: 18px 18px 18px 18px;
+            }
+        }
+    }
+}

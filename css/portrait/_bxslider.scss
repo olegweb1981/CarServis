@@ -1,0 +1,81 @@
+@media screen and (max-width: $sm-width) {
+    .bx-wrapper {
+        border: 0;
+        margin-bottom: 0;
+        
+        .bx-controls-direction a {
+            position: absolute;
+            top: 67px;
+            margin-top: 0;
+            outline: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .bx-prev, .bx-next {
+            background-image: url(/img/chevron.gif);
+            padding: 50px 20px;
+            background-repeat: no-repeat;
+            display: none;
+            position: absolute;
+            background-size: 14px;
+            background-position: center center;
+            cursor: pointer;
+            text-indent: -9999px;
+            border-radius: 0;
+        }
+
+        .bx-prev {
+            left: 0;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .bx-next {
+            transform: scaleX(-1);
+            right: 0;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        &:hover .bx-prev, &:hover .bx-next {
+            background-color: rgba(0,0,0, 0.45);
+            opacity: 0.6;
+            display: block;
+
+            &:hover {
+                background-color: white;
+                background-image: url(/img/chevron-black.gif);
+                background-position: center center;
+                opacity: 1;
+            }
+        }
+        
+        .bx-pager {
+            padding-top: 0;
+            bottom: 20px;
+            display: none;
+        }
+
+        .bx-pager.bx-default-pager a {
+            background-color: rgba(0, 0, 0, 0.25);
+            text-indent: -9999px;
+            display: block;
+            width: 12px;
+            height: 12px;
+            margin: 0 5px;
+            outline: 0;
+            border-radius: 100%;
+        }
+
+        .bx-pager.bx-default-pager a.active, 
+        .bx-pager.bx-default-pager a:focus, 
+        .bx-pager.bx-default-pager a:hover {
+            background: rgba(255, 255, 255, 1);
+            transition: 0.5s ease;
+        }
+
+        .bx-viewport {
+            min-height: 238px;
+        }   
+    }
+}

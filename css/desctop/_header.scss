@@ -1,0 +1,40 @@
+@media screen and (max-width: $xl-width) {
+    .header {
+
+        .menu {
+            flex-direction: column;
+            padding: 28px 0 24px 0;
+        }
+        
+        .logo {
+            font-size: 34px;
+            padding-bottom: 34px;
+        }
+
+        .nav {
+            ul {
+
+                li {
+                    font-size: 16px;
+                    padding-left: 16px;
+
+                    &:first-child {
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .dropotron {
+        width: 210px;
+        margin-left: -16px;
+
+        li {
+            padding: 10px 15px;
+            font-size: 14px;
+            line-height: 28px;
+        }
+    }
+}

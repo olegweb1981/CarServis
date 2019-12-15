@@ -10,34 +10,6 @@
 
         &:hover .view {
             display: block;
-
-            p {
-                animation: move 0.3s ease 0s;
-                position: relative;
-
-                @keyframes move {
-                    0% {
-                        top: -10px;
-                    }
-                    100% {
-                        top: 0;
-                    }
-                }
-            }
-
-            .btn-light {
-                animation: move-btn 0.3s ease 0s;
-                position: relative;
-
-                @keyframes move-btn {
-                    0% {
-                        top: 10px;
-                    }
-                    100% {
-                        top: 0;
-                    }
-                }
-            }
         }
     }
 
@@ -67,10 +39,18 @@
             color: white;
             font-size: 18px;
             font-weight: 300;
+            animation: view-botton 0.5s ease-in-out 0s;
+            animation-fill-mode: forwards;
+            position: relative;
+            opacity: 0;
         }
 
         .btn-light {
             color: white;
+            animation: view-top 0.5s ease-in-out 0s;
+            animation-fill-mode: forwards;
+            position: relative;
+            opacity: 0;
         }
     }
 
@@ -79,5 +59,27 @@
         height: 100%;
         cursor: pointer;
         position: relative;
+    }
+}
+
+@keyframes view-botton {
+    0% {
+        top: -40px;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes view-top {
+    0% {
+        top: 40px;
+        opacity: 0;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
     }
 }

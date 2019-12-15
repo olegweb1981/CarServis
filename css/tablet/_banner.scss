@@ -1,12 +1,32 @@
-@media screen and (max-width: $lg-width) {
-    .banner {
+@media screen and (max-width: $md-width) {
 
-        h1 {
-            padding: 16px 0 46px 0;
+    .banner-1,
+    .banner-2,
+    .banner-3 {
+
+        .container {
+            width: 100%;
         }
 
-        p {
-            padding: 33px 0 66px 0;
+        .bx-ittem {
+            padding: 136px 0 100px 0;
+        }
+
+        .sm-car {
+            display: none;
+        }
+
+        h1 {
+            font-size: 21px;
+            padding-bottom: 66px;
+        }
+
+        .subtitle {
+            display: none;
+        }
+
+        .btn-light {
+            padding: 12px 18px 12px 18px;
         }
     }
 }

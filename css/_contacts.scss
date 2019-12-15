@@ -30,6 +30,11 @@
         }
     }
 
+    .top-bar {
+        display: none;
+        text-align: center;
+    }
+
     .social {
         display: flex;
         flex-direction: row;

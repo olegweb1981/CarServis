@@ -1,0 +1,33 @@
+@media screen and (max-width: $md-width) {
+    .overviev {
+
+        .title {
+            padding: 54px 0 24px 0;
+        }
+
+        .nav-overviev {
+            padding-bottom: 44px;
+            flex-direction: column;
+        }
+
+        .overviev-item {
+            width: 100%;
+            position: relative;
+            padding-bottom: 3px;
+
+            .caption {
+                font-size: 17px;
+                padding: 31px 0 15px 0;
+            }
+
+            img {
+                top: 82px;
+                left: 0;
+            }
+
+            p {
+                padding: 0 0 3px 78px;
+            }
+        }
+    }
+}

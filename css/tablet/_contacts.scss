@@ -1,0 +1,57 @@
+@media screen and (max-width: $md-width) {
+    .contacts {
+        background-color: #F5F5F5;
+    
+        ul {
+    
+            li {
+                padding: 11px 0px 10px 12px;
+                border-left: 0;
+            }
+
+            i {
+                padding-right: 6px;
+            }
+        }
+
+        .information {
+            flex-direction: column;
+        }
+            
+        .social {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+    
+            i {
+                font-size: 12px;
+                padding: 20px 19px 19px 18px;
+                border: 0;
+
+                &:last-child {
+                    border-right: 0;
+                }
+            }
+        }
+    
+        .hidden-search {
+            top: 107px;
+            right: 0;
+            width: 199px;
+    
+            .form {
+                padding: 8px;
+            }
+    
+            input {
+                padding: 15px 10px;
+                width: 125px;
+            }
+    
+            i {
+                font-size: 12px;
+                padding: 18px 18px 18px 18px;
+            }
+        }
+    }
+}

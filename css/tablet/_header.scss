@@ -1,0 +1,28 @@
+@media screen and (max-width: $md-width) {
+.header {
+
+        .menu {
+            padding: 29px 0 25px 0;
+            flex-direction: row
+        }
+        
+        .logo {
+            padding-bottom: 0px;
+        }
+
+        .nav {
+            display: none;
+        }
+
+        .navbar {
+            display: block;
+
+            i {
+                font-weight: 900;
+                font-size: 28px;
+                color: #999;
+            }
+        }
+
+    }
+}

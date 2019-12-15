@@ -1,0 +1,48 @@
+@media screen and (max-width: $xl-width) {
+    .comment {
+
+        .slick-prev, .slick-next {
+            width: 60px;
+            height: 60px;
+        }
+
+        .slick-prev {
+            left: 0;
+            top: 218px;
+        }
+
+        .slick-next {
+            transform: scaleX(-1);
+            right: 0;
+            top: 188px;
+        }
+
+        .quote {
+            padding: 0 62px;
+        }
+
+        .quote-item {
+            font-size: 18px;
+            line-height: 28px;
+            padding: 53px 30px 41px 30px;
+            letter-spacing: -0.3px;
+
+            br {
+                display: none;
+            }
+
+            img {
+                margin-bottom: 29px;
+                
+            }
+        }
+
+        .line {
+            padding: 23px 0;
+        }
+
+        .autor {
+            padding: 9px 0;
+        }
+    }
+}

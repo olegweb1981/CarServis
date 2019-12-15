@@ -6,14 +6,24 @@
     }
 
     .pictures{
+        width: 100%;
         display: flex;
         flex-direction: row;
         padding: 16px 0 60px 0;
+    }
 
-        img:hover {
-            opacity: 0.85;
-            transition: 0.5s;
-            cursor: pointer;
+    .pic-item {
+        width: 33.3333%;
+
+        img {
+            width: 100%;
+
+            :hover {
+                opacity: 0.85;
+                transition: 0.5s;
+                cursor: pointer;
+                width: 100%;
+            }
         }
     }
 
@@ -23,5 +33,9 @@
         align-items: center;
         justify-content: space-between;
         padding: 9px 20px 9px 20px;
+
+        img {
+            width: auto;
+        }
     }
 }

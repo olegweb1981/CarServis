@@ -1,0 +1,23 @@
+@media screen and (max-width: $md-width) {
+    .repair {
+        padding-bottom: 52px;
+        
+        .title {
+            padding: 0px 0 24px 0;
+        }
+
+        .pictures{
+            padding: 16px 0 20px 0;
+            flex-wrap: wrap;
+
+            .pic-item {
+                width: 50%;
+                padding-bottom: 39px;
+            }
+        }
+
+        .caption {
+            padding: 2px 15px 2px 15px;
+        }
+    }
+}

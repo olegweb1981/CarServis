@@ -1,0 +1,43 @@
+@media screen and (max-width: $xl-width) {
+    .btn {
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 1px;
+        padding: 14px 21px 14px 21px;
+        border: 1px solid;
+        border-color: white;
+        background-color: #1E69B8;
+        color: white;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 1px;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(0,0,0,0.1);
+            transition: 0.2s ease 0s;
+            z-index: 9;
+        }
+
+        &:hover::before {
+            width: 100%;
+            background: rgba(0,0,0,0.12);
+        }
+    }
+
+    .btn-light {
+        background-color: transparent;
+        border: 1px solid rgb(233, 221, 221);
+        padding: 11px 18px 11px 18px;
+        color: #1E69B8;
+
+        &:hover {
+            background-color: #1E69B8;
+            color: white;
+            transition: 0.5s ease;
+        }
+    }
+}

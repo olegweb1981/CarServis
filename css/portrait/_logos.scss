@@ -1,0 +1,25 @@
+@media screen and (max-width: $sm-width) {
+    .logos {
+
+        .nav-logos {
+            padding: 66px 0;
+            margin-bottom: 92px;
+
+            img {
+                width: 50px;
+            }
+
+            .slick-dots li button::before {
+                width: 11px;
+                height: 11px;
+            }
+            .slick-dots li {
+                width: 11px;
+                height: 11px;
+            }
+            .slick-dots {
+                bottom: 17px;
+            }
+        }
+    }
+}

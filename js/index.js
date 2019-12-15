@@ -1,17 +1,17 @@
-//BxSlider
+//bxSlider
 $(document).ready(function(){
     $('.bxslider').bxSlider({
         mode: "fade",
     });
 });
 
-//Slick
+//slick
 $('.quote').slick();
 
 //Accordeon
 $(".accordion" ).accordion();
 
-//LogosSlick
+//logosSlick
 $(document).ready(function(){
     $('.multiple-items').slick({
         infinite: true,
@@ -22,11 +22,20 @@ $(document).ready(function(){
     });
 });
 
-//Dropotron
+//dropotron
 $('.nav > ul').dropotron();
 
 
-//Hidden Search
-function toggleMenu() {
+//hiddenSearch
+function toggleNav() {
     $(document.body).toggleClass('search-visible');
+  }
+
+//hiddenTopBar
+function toggleTopBar() {
+    $(document.body).toggleClass('top-bar-visible');
+  }
+//arrowTopBar
+function arrowTopBar() {
+    $('.top-bar > img').toggleClass('active');
   }
