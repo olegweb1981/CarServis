@@ -14,34 +14,6 @@
 
             &:hover .view {
                 display: block;
-
-                p {
-                    animation: move 0.3s ease 0s;
-                    position: relative;
-
-                    @keyframes move {
-                        0% {
-                            top: -10px;
-                        }
-                        100% {
-                            top: 0;
-                        }
-                    }
-                }
-
-                .btn-light {
-                    animation: move-btn 0.3s ease 0s;
-                    position: relative;
-
-                    @keyframes move-btn {
-                        0% {
-                            top: 10px;
-                        }
-                        100% {
-                            top: 0;
-                        }
-                    }
-                }
             }
         }
 

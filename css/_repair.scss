@@ -18,7 +18,7 @@
         img {
             width: 100%;
 
-            :hover {
+            &:hover {
                 opacity: 0.85;
                 transition: 0.5s;
                 cursor: pointer;
