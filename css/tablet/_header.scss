@@ -1,8 +1,9 @@
 @media screen and (max-width: $md-width) {
 .header {
+    padding-bottom: 16px;
 
         .menu {
-            padding: 29px 0 25px 0;
+            padding: 29px 0 15px 0;
             flex-direction: row
         }
         
@@ -21,8 +22,8 @@
                 font-weight: 900;
                 font-size: 28px;
                 color: #999;
+                cursor: pointer;
             }
         }
-
     }
 }

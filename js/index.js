@@ -29,13 +29,25 @@ $('.nav > ul').dropotron();
 //hiddenSearch
 function toggleNav() {
     $(document.body).toggleClass('search-visible');
-  }
+}
 
 //hiddenTopBar
 function toggleTopBar() {
     $(document.body).toggleClass('top-bar-visible');
-  }
+}
+
 //arrowTopBar
 function arrowTopBar() {
     $('.top-bar > img').toggleClass('active');
-  }
+}
+
+//mobileMenu
+function mobileMenu() {
+    $(document.body).toggleClass('navbar-visible');
+}
+
+//arrowDropdown
+function arrowDropdown(){
+    $('.dropdown').removeClass('active');
+    $(this).addClass('active');
+}

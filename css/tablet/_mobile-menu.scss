@@ -1,0 +1,42 @@
+.mobile-menu {
+    display: none;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    li {
+        padding: 9px 14px 11px 20px;
+        font-size: 14px;
+        font-weight: 400;
+        border-bottom: 1px solid white;
+        background-color: #F0F0F0;
+        position: relative;
+
+        a:hover {
+            text-decoration: underline;;
+        }
+
+        ul {
+            padding: 0;
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+
+        img {
+            position: absolute;
+            top: 19px;
+            right: 16px;
+        }
+    }
+}
+
+body.navbar-visible {
+
+    .mobile-menu {
+        display: block;
+    }
+}
